@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>List</title>
+        <h1></h1>
     </head>
     <body>
+    	{% for restaurant in my_list %}
+	<h1>{{ restaurant.restaurant_name }}</h1>
+	<p> {{ restaurant.food_type }}</p>
+	{% endfor %}
 
     </body>
 </html>
